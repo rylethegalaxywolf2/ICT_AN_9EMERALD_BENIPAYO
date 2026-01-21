@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Calculator Display</title>
+
+    <style> 
+         .calculator {
+            width: 300px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .display {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .inputs {
+            flex-grow: 1;
+        }
+        .result {
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+       
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+
+        <div class="display">
+            Basic Calculator Display
+        </div>
+
+        <div class="row">
+            <div class="inputs">
+                <strong>Addition</strong><br>
+                <input type="text" id="add1" disabled>
+                <input type="text" id="add2" disabled>
+                <button disabled>=</button>
+            </div>
+            <div class="result" id="addResult"></div>
+        </div>
+
+        <div class="row">
+            <div class="inputs">
+                <strong>Subtraction</strong><br> 
+                <input type="text" id="sub1" disabled>
+                <input type="text" id="sub2" disabled>
+                <button disabled>=</button>
+            </div>
+            <div class="result" id="subResult"></div>
+        </div>
+
+        <div class="row">
+            <div class="inputs">
+                <strong>Multiplication</strong><br>
+                <input type="text" id="mul1" disabled>
+                <input type="text" id="mul2" disabled>
+                <button disabled>=</button>
+            </div>
+            <div class="result" id="mulResult"></div>
+        </div>
+
+        <div class="row">
+            <div class="inputs">
+                <strong>Division</strong><br>
+                <input type="text" id="div1" disabled>
+                <input type="text" id="div2" disabled>
+                <button disabled>=</button>
+            </div>
+            <div class="result" id="divResult"></div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("add1").value = 67;
+        document.getElementById("add2").value = 67;
+        document.getElementById("addResult").innerText = 134;
+
+        document.getElementById("sub1").value = 90;
+        document.getElementById("sub2").value = 25;
+        document.getElementById("subResult").innerText = 65;
+
+        document.getElementById("mul1").value = 8;
+        document.getElementById("mul2").value = 7;
+        document.getElementById("mulResult").innerText = 56;
+
+        document.getElementById("div1").value = 144;
+        document.getElementById("div2").value = 12;
+        document.getElementById("divResult").innerText = 12;
+    </script>
+
+</body>
+</html>
